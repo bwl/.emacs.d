@@ -459,6 +459,28 @@ point reaches the beginning or end of the buffer, stop there."
   (setq ivy-rich-path-style 'abbrev)) ;; Abbreviate paths using abbreviate-file-name (e.g. replace “/home/username” with “~”)
 
 
+
+;; ========================
+;; VERSION CONTROL WITH GIT
+
+
+;; Magit
+(use-package magit
+  :config
+  (global-set-key (kbd "s-g") 'magit-status))   ;; Cmd+g for git status
+
+
+;; Show changes in the gutter
+(use-package git-gutter
+  :diminish
+  :config
+  (global-git-gutter-mode 't)
+  (set-face-background 'git-gutter:modified 'nil)   ;; background color
+  (set-face-foreground 'git-gutter:added "green4")
+  (set-face-foreground 'git-gutter:deleted "red"))
+
+
+
 ;; ===============
 ;; CODE COMPLETION
 
