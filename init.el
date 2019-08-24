@@ -162,9 +162,11 @@
   (add-to-list 'default-frame-alist '(ns-appearance . dark)) ;; {light, dark}
   (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t)))
 
-(setq-default line-spacing 5)
+;; Font
+(when (member "SF Mono" (font-family-list))
+  (set-face-attribute 'default nil :font "SF Mono 16"))
 
-;; Nice and simple default light theme.
+(setq-default line-spacing 3)
 
 (use-package poet-theme)
 (load-theme 'poet-dark-monochrome)
