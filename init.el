@@ -565,13 +565,13 @@ point reaches the beginning or end of the buffer, stop there."
       '("◉" "○"))
 
 ;; Store all my org files in ~/org.
-(setq org-directory "~/org")
+(setq org-directory "~/Dropbox/org")
 
 ;; And all of those files should be in included agenda.
-(setq org-agenda-files '("~/org"))
+(setq org-agenda-files '("~/Dropbox/org"))
 
 ;; Open main org file with C-c o
- (global-set-key (kbd "M-s-o") (lambda () (interactive) (find-file "~/org/main.org")))
+ (global-set-key (kbd "M-s-o") (lambda () (interactive) (find-file "~/Dropbox/org/main.org")))
 
 ;; View inbox with C-c i
 ;; DONE change to an inbox item processed view - don't just look at raw file.
@@ -585,7 +585,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "s-d") 'org-agenda-list)
 
 ;; For org-capture, set default file to save into
-(setq org-default-notes-file "~/org/inbox.org")
+(setq org-default-notes-file "~/Dropbox/org/inbox.org")
 
 ;; Open config file by pressing C-x and then C
 (global-set-key (kbd "C-x C") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
