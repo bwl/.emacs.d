@@ -4,5 +4,6 @@ bookmarks
 url
 elpa
 tmp
+auto-save-list
 custom.el
 smex-items
