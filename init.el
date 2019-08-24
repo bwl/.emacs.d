@@ -168,8 +168,9 @@
 
 (setq-default line-spacing 3)
 
-(use-package poet-theme)
-(load-theme 'poet-dark-monochrome)
+;; Nice and simple default light theme.
+;; (use-package poet-theme)
+(load-theme 'misterioso)
 
 ;; Pretty icons
 (use-package all-the-icons)
@@ -183,7 +184,7 @@
 (global-visual-line-mode 1)
 
 ;; Highlight current line
-(global-hl-line-mode 1)
+(global-hl-line-mode 0)
 
 ;; Show parens and other pairs.
 (use-package smartparens
