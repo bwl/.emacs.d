@@ -4,7 +4,6 @@
 ;; ====
 ;; INIT
 
-
 ;; Package system and sources.
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
@@ -408,8 +407,6 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "M-s-]") 'winner-redo)
 
 
-
-
 ;; ==========================================
 ;; MENUS AND COMPLETION (not code completion)
 
@@ -526,14 +523,12 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (dashboard-setup-startup-hook))
   (setq dashboard-banner-logo-title "⌘ welcome to castleORG")
-;; Set the banner
-   (setq dashboard-startup-banner 'logo)
-
-(setq dashboard-items '((recents  . 5)
-                        (bookmarks . 5)
-                        (agenda . 5)
-                        (registers . 5)))
-
+   ;; Set the banner
+  (setq dashboard-startup-banner 'logo)
+  (setq dashboard-items '((recents  . 5)
+                         (bookmarks . 5)
+                         (agenda . 5)
+                         (registers . 5)))
 
 ;; =============
 ;; MODIFIER KEYS
